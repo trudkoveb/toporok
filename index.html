@@ -31,18 +31,19 @@
                 </a>
               </div>
             </div>
-            <div class="col-md-5 col-sm-6">
+            <div class="col-md-6 col-sm-6">
               <div class="header__address">
-                <p>Адрес офиса:</p>
-                <p>г. Санкт-Петербург</p>
-                <p>ул. Грибалевой д.6 лит.Б, пом.1-Н</p>
-                <span>E-mail: <a href="mailto:2950282@mail.ru">2950282@mail.ru</a></span>
+                <p>г. Санкт-Петербург,
+                ул. Грибалевой д.6 лит.Б, пом.1-Н</p>
+                <div class="header__phones">
+                  <span>8 (921) 415-38-48</span>
+                  <span>8 (911) 924-07-14</span>
+                  </div>
               </div>
             </div>
-            <div class="col-md-3 col-sm-12">
-              <div class="header__phones">
-                <p>8 (921) 415-38-48</p>
-                <p>8 (911) 924-07-14</p>
+            <div class="col-md-2 col-sm-12">
+              <div class="header__mail">
+                <a href="mailto:2950282@mail.ru">2950282@mail.ru</a>
                 <div class="header__phones-call-btn">
                   <input type="submit" value="заказать звонок">
                 </div>
@@ -121,6 +122,10 @@
               <aside class="main-page-aside-form">
                 <p class="main-page-aside-form-title">Хочу Дом!</p>
                 <form action="">
+                  <p><label for="aside-form-name">имя*</label></p>
+                  <div class="main-page-aside-form-input">
+                    <input type="text" id="aside-form-name" pattern="^[ 0-9]+$">
+                  </div>
                   <p><label for="aside-form-total">сумма*</label></p>
                   <div class="main-page-aside-form-input">
                     <input type="text" id="aside-form-total" pattern="^[ 0-9]+$">
@@ -224,17 +229,17 @@
               <p>производим бревно</p>
               <img src="img/icon-about-work-wood.png" alt="производим бревно">
             </div>
-            <div class="main-page-about-work-item work-house">
-              <p>сборка дома</p>
-              <img src="img/icon-about-work-house.png" alt="сборка дома">
+            <div class="main-page-about-work-item work-people">
+              <p>готовый проект</p>
+              <img src="img/icon-about-work-people.png" alt="готовый проект">
             </div>
             <div class="main-page-about-work-item work-brush">
               <p>кровля, отделка</p>
               <img src="img/icon-about-work-brush.png" alt="кровля, отделка">
             </div>
-            <div class="main-page-about-work-item work-people">
-              <p>готовый проект</p>
-              <img src="img/icon-about-work-people.png" alt="готовый проект">
+            <div class="main-page-about-work-item work-house">
+              <p>сборка дома</p>
+              <img src="img/icon-about-work-house.png" alt="сборка дома">
             </div>
           </div>
         </section>
@@ -251,25 +256,34 @@
           </div>
         </section>
         <section class="main-page-form">
-          <form action="">
-            <div class="main-page-form__user-info">
-              <p><label for="main-page-form-name">Имя*</label></p>
-              <div class="main-page-form__user-info-input">
-                <input id="main-page-form-name" type="text">
+          <div class="container">
+            <form action="">
+              <p>Оставьте свой номер телефона и мы с вами свяжемся</p>
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="main-page-form__user-info">
+                    <p><label for="main-page-form-name">Имя*</label></p>
+                    <div class="main-page-form__user-info-input">
+                      <input id="main-page-form-name" type="text">
+                    </div>
+                    <p><label for="main-page-form-tel">Телефон*</label></p>
+                    <div class="main-page-form__user-info-input">
+                      <input id="main-page-form-tel" type="tel">
+                    </div>
+                    <div class="main-page-form__user-message-btn">
+                      <input type="submit" value="Отправить">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="main-page-form__user-message">
+                  <p><label for="main-page-form-mess">Укажите желаемую сумму и комментарий*</label></p>
+                    <textarea name="" id="main-page-form-mess"></textarea>
+                  </div>
+                </div>
               </div>
-              <p><label for="main-page-form-tel">Телефон*</label></p>
-              <div class="main-page-form__user-info-input">
-                <input id="main-page-form-tel" type="tel">
-              </div>
-            </div>
-            <div class="main-page-form__user-message">
-            <p><label for="main-page-form-mess">Укажите желаемую сумму и комментарий*</label></p>
-              <textarea name="" id="main-page-form-mess"></textarea>
-              <div class="main-page-form__user-message-btn">
-                <input type="submit" value="Отправить">
-              </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </section>
       </main>
     </div>
